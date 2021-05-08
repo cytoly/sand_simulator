@@ -396,12 +396,6 @@ impl App {
                     self.simulator.grid = vec![FieldState::Empty; GRID_SIZE.x * GRID_SIZE.y];
                     self.simulator.particles = Vec::new();
                 },
-                Event::KeyDown {keycode: Some(Keycode::D), ..} => {
-                    self.simulator.set_creation(true, FieldState::Empty)
-                }
-                Event::KeyUp {keycode: Some(Keycode::D), ..} => {
-                    self.simulator.set_creation(false, FieldState::Empty)
-                }
                 Event::MouseButtonDown {
                     mouse_btn, x, y, .. } => {
                     self.mouse_pos = [x as usize, y as usize].into();
