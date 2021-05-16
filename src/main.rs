@@ -15,7 +15,7 @@ const BRUSH_CHANGE: usize = 5;
 const MAX_BRUSH: usize = 40;
 
 lazy_static! {
-        static ref WINDOW: Vec2<u32> = Vec2::<u32>::new(800, 600);
+        static ref WINDOW: Vec2<u32> = Vec2::<u32>::new(600, 600);
         static ref GRID_SIZE: Vec2<usize> = Vec2::<usize>::new(
             WINDOW.x as usize / SCALE,
             WINDOW.y as usize / SCALE,
